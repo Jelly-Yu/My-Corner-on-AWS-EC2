@@ -1,0 +1,34 @@
+<section class="animepage">
+    <div class="search">
+        <h1>Winter Animation List</h1>
+        <label>search:</label>
+        <input ng-model="query" placeholder="Search for animations" autofocus>
+
+        <label class="formgroup">by:
+            <select ng-model="animeOrder">
+                <option value="name">Name</option>
+                <option value="type">Type</option>
+            </select>
+
+        </label>
+        <label class="formgroup">
+            <input type = "radio" ng-model="direction" name="direction" checked>
+            ascending
+        </label>
+        <label class="formgroup">
+            <input type="radio" ng-model="direction" name="direction" value="reverse">
+            descending
+        </label>
+    </div>
+    <ul class="animelist" ng-show="query">
+        <li ng-animate = "'animate'" class="anime cf" ng-repeat = "item in animations | filter:query | orderBy: animeOrder: direction">
+            <a href="#/details/{{animations.indexof(item)}}">
+                <img ng-src="images/{{item.shortname}}_tb.jpg" alt="Photo of {{item.name}}">
+                <div class="info">
+                    <h2>{{item.name}}</h2>
+                    <h3>{{item.type}}</h3>
+                </div>
+            </a>
+        </li>
+    </ul>
+</section>

@@ -1,0 +1,13 @@
+<section class="animeinfo">
+    <div class="anime cf" ng-model="animations">
+        <a href="#/details/{{prevItem}}" class="btn btn-left">&lt;</a>
+        <a href="#/details/{{nextItem}}" class="btn btn-right">&gt;</a>
+        <h1>{{animations[whichItem].name}}</h1>
+        <div class="info">
+            <h3>{{animations[whichItem].type}}</h3>
+            <img ng-src="images/{{animations[whichItem].shortname}}_tb.jpg" alt="Photo of {{animations[whichItem].name}}">
+            <div class="intro">{{animations[whichItem].intro}}</div>
+        </div>
+    </div>
+    <a href="index.html">&laquo; Back to search</a>
+</section>

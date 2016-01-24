@@ -22,7 +22,7 @@
     </div>
     <ul class="animelist" ng-show="query">
         <li ng-animate = "'animate'" class="anime cf" ng-repeat = "item in animations | filter:query | orderBy: animeOrder: direction">
-            <a href="#/details/{{animations.indexof(item)}}">
+            <a href="#/details/{{animations.indexOf(item)}}">
                 <img ng-src="images/{{item.shortname}}_tb.jpg" alt="Photo of {{item.name}}">
                 <div class="info">
                     <h2>{{item.name}}</h2>

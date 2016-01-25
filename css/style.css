@@ -69,11 +69,13 @@ html {
     background: -webkit-linear-gradient(top, #febbbb 0%,#fe9090 45%,#ff5c5c 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #febbbb 0%,#fe9090 45%,#ff5c5c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#febbbb', endColorstr='#ff5c5c',GradientType=0 ); /* IE6-9 */
+    background-image: url("../images/Anime-of-Winter-2016.jpg");
+
     min-height: 100%;
     height: auto;
 }
 body  {
-    font-family: Gigi, Serif;
+    font-family:Helvetica, Serif;
     font-size: 1rem;
     line-height: 160%;
     *zoom: 1;
@@ -86,12 +88,12 @@ h1, h2, h3, h4, h5, h6 {
     text-shadow: 1px 1px rgb(255,255,255);
 }
 a {
-    color: #145266;
+    color: #e60042;
     font-family: Bree Serif, serif;
 }
 
 h1{
-    color: #145266;
+    color: #e60042;
     font-size: 2.2rem;
     line-height: 100%;
     margin-bottom: 10px;
@@ -112,7 +114,7 @@ h3{
 
 p {
     line-height: 1.3rem;
-    color: #475B62;
+    color: #000;
     margin-bottom: 10px;
     font-family: 'Merriweather';
 }
@@ -123,9 +125,20 @@ a.small {
 }
 
 /* Search Styles */
-
+input::-webkit-input-placeholder {
+    color: rgba(255,255,255,.5);
+}
+input::-moz-placeholder {
+    color: rgba(255,255,255,.5);
+}
+input:-moz-placeholder {   /* Older versions of Firefox */
+    color: rgba(255,255,255,.5);
+}
+input:-ms-input-placeholder {
+    color: rgba(255,255,255,.5);
+}
 .search {
-    background: #063642;
+    background: #f23d70; /* Old browsers */
     color: #EEE8D5;
     width: 90%;
     min-width: 320px;
@@ -154,7 +167,7 @@ a.small {
     cursor: pointer;
     border: 1px solid transparent;
     border-radius: 4px;
-    background: #C61C6F;
+    background: #f26d93;
     color: #FCF4DC;
     -webkit-user-select: none;
     -moz-user-select: none;
@@ -172,7 +185,7 @@ a.small {
 }
 
 .btn:hover {
-    background: #09576D;
+    background: #e60042;
 }
 
 .search label {
@@ -180,11 +193,12 @@ a.small {
 }
 
 .search input {
+    margin-bottom:10px;
     font-family: 'Droid Sans', sans-serif;
     width: 100%;
     padding: 10px 0 10px 15px;
     font-size: 1rem;
-    color: #475B62;
+    color: #000;
     background: rgba(255,255,255,0.4);
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 10px;
@@ -206,9 +220,9 @@ a.small {
     display: inline;
     padding: 10px 0 10px 15px;
     font-size: 1rem;
-    color: #475B62;
+    color: #000;
     background: rgba(255,255,255,0.4);
-    border: 1px solid rgba(0,0,0,0.3);
+    border: 1px solid rgba(255,0,0,0.3);
     border-radius: 10px;
     outline: 0;
 }
